@@ -55,6 +55,8 @@ label[for="open-menu"] img {
   height: auto;
 }
 .down-menu {
+  display: block;
+  position: absolute;
   width: 100%;
   max-height: 0px;
   overflow: hidden;
@@ -124,6 +126,32 @@ main {
   width: 100%;
   height: auto;
 }
+.history-block {
+  background: green;
+  padding: 0vw 0vw 5vw;
+  position: relative;
+}
+input#show-more {
+  display: none;
+}
+label[for="show-more"] {
+  display: block;
+  position: absolute;
+  bottom: 3vw;
+  cursor: pointer;
+}
+.slider-container  {
+  width: 100%;
+  max-height: 110vw;
+  background-color: #000;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in;
+}
+input#show-more:checked ~ .slider-container {
+  max-height: 1100vw;
+  overflow: visible;
+  transition: max-height 0.5s ease-in;
+}
 .slider-wrapper {
   width: 96%;
   height: 50vw;
@@ -136,4 +164,39 @@ main {
   height: 42vw;
   background-color: green;
   overflow: hidden;
+}
+.slider-line {
+  display: flex;
+  width: auto;
+  height: 100%;
+  background-color: blue;
+}
+.slider-line-item {
+  min-width: 90vw;
+  height: 100%;
+}
+.footer-line {
+  display: flex;
+  width: 100%;
+  height: 7.5vw;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+.social-networks {
+  display: flex;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+.social {
+  display: block;
+  width: 4vw;
+  height: 4.3vw;
+}
+.social:first-child {
+  margin-right: 1vw;
+}
+.social img {
+  width: 100%;
+  height: auto;
 }
